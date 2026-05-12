@@ -1,0 +1,90 @@
+:root {
+    --primary-blue: #0B4DA2;
+    --primary-blue-dark: #083a7a;
+    --white: #ffffff;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Contenedor con imagen de fondo y capa transparente negra */
+.hero-background {
+    /* Reemplaza la URL por la de una imagen de tu preferencia */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url(/assets/book1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+}
+
+/* Caja de anuncios con transparencia sutil */
+.announcement-box {
+    background: rgba(255, 255, 255, 0.95);
+    border-left: 5px solid var(--primary-blue);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    color: #333;
+}
+
+/* Card de Login Flotante */
+.login-card {
+    border: none;
+    border-radius: 20px;
+    background: var(--white);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.btn-primary {
+    background-color: var(--primary-blue);
+    border: none;
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-blue-dark);
+    transform: translateY(-2px);
+}
+
+/* Añade esto al final de tu styles.css */
+.card-book {
+    transition: transform 0.3s ease;
+    border-radius: 12px;
+}
+
+.card-book:hover {
+    transform: translateY(-5px);
+}
+
+.table thead th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    padding: 15px;
+}
+
+.table tbody td {
+    padding: 15px;
+    vertical-align: middle;
+}
